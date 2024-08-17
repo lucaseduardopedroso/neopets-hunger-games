@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Hunger Games Neopets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+        }
+        #playerInput {
+            margin: 10px;
+        }
+        #playerList ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #playerList li {
+            margin: 5px 0;
+        }
+        #results {
+            margin: 20px 0;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simulador Hunger Games Neopets</h1>
+    <div id="playerInputContainer">
+        <input type="text" id="playerInput" placeholder="Digite o nome do jogador">
+        <button id="addPlayer">Adicionar Jogador</button>
+    </div>
+    <div id="playerList">
+        <ul></ul>
+    </div>
+    <div id="controls">
+        <button id="startSimulation" disabled>Iniciar Simulação</button>
+        <button id="nextRound" disabled>Próxima Rodada</button>
+        <button id="resetSimulation">Reiniciar Simulação</button>
+    </div>
+    <div id="results"></div>
+    <script src="script.js"></script>
+</body>
+</html>
