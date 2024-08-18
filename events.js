@@ -9,7 +9,7 @@ const eliminatoryEvents1 = [
     (player, pronouns) => `${player} é encurralad${pronouns.object} por um grupo de Grarrls em Tyrannia e não consegue escapar!`,
     (player, pronouns) => `${player} é atacad${pronouns.object} por um grupo de Pteris famintos em Tyrannia e é eliminad${pronouns.object}!`,
     (player, pronouns) => `${player} é atacad${pronouns.object} por Jhudoras Bodyguards e não sobrevive!`,
-    (player, pronouns) => `${player} tropeça e cai na Piscina de Magma em Moltara, sendo ${pronouns.object}!`,
+    (player, pronouns) => `${player} tropeça e cai na Piscina de Magma em Moltara, sendo eliminado${pronouns.object}!`,
     (player, pronouns) => `${player} é atacad${pronouns.object} por um grupo de Werelupes nos Bosques Assombrados e não escapa!`,
     (player, pronouns) => `${player} é pego em uma avalanche na Motanha do Terror e não sobrevive!`,
     (player, pronouns) => `${player} tromba em Dr. Sloth, que ${pronouns.object} extermina sem dar a chance de um pedido de desculpas!`,
@@ -19,7 +19,8 @@ const eliminatoryEvents1 = [
     (player, pronouns) => `${player} se perde em uma névoa deixada pela The Darkest Faerie e é eliminad${pronouns.object}!`,
     (player, pronouns) => `${player} é pisotead${pronouns.object} por uma manada de Chombies e não sobrevive!`,
     (player, pronouns) => `${player} é peg${pronouns.object} por uma armadilha de Thieves e é eliminad${pronouns.object}!`,
-    (player, pronouns) => `${player} é atacad${pronouns.object} por um grupo de Quiggles e não escapa!`
+    (player, pronouns) => `${player} é atacad${pronouns.object} por um grupo de Quiggles e não escapa!`,
+    (player, pronouns) => `${player} estoura suas cordas vocais de tanto gritar em uma partida de Vamos Fazer Barulho é eliminad${pronouns.object}!`,
 ];
 
 const eliminatoryEvents2 = [
@@ -32,7 +33,7 @@ const eliminatoryEvents2 = [
     (player1, pronouns1, player2, pronouns2) => `${player1} usa a Espada de Skardsen para atacar ${player2} nos Bosques Assombrados! ${player2} não sobrevive!`,
     (player1, pronouns1, player2, pronouns2) => `${player1} enfrenta ${player2} em uma batalha de rimas na Ilha do Mistério, o perdedor deve ser sacrificado no vulcão. ${player2} perde!`,
     (player1, pronouns1, player2, pronouns2) => `${player1} elimina acidentalmente ${player2} ao tentar demonstrar como utilizar uma Wand of the Dark Faerie`,
-    (player1, pronouns1, player2, pronouns2) => `${player1} empurra ${player2} para dentro do poço da Wishing Well, o eliminando!`,
+    (player1, pronouns1, player2, pronouns2) => `${player1} empurra ${player2} para dentro do Poço dos Desejos, ${pronouns2.object} eliminando!`,
     (player1, pronouns1, player2, pronouns2) => `${player1} e ${player2} tentam invadir a camara de Lord Darigan em busca de armamento. ${player2} é eliminad${pronouns2.object} por um dos guardas`,
     (player1, pronouns1, player2, pronouns2) => `${player1} entrega ${player2} a Dr. Sloth em troca de Neocola Tokens! ${player2} é eliminad${pronouns2.object}!`,
     (player1, pronouns1, player2, pronouns2) => `${player1} usa uma Seasonal Attack Pea contra ${player2} enquanto grita "Merry Christmas"! ${player2} não sobrevive!`,
